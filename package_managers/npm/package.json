@@ -1,0 +1,33 @@
+{
+  "name": "hello-js-world",
+  "version": "1.0.0",
+  "description": "lorem ipsum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test\"",
+    "start": "echo \"start\"",
+    "stop": "echo \"stop\"",
+    "foo": "echo \"foo\"",
+    "bar": "echo \"bar\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Badacadabra/hello-js-world.git"
+  },
+  "keywords": [
+    "test",
+    "js"
+  ],
+  "author": "Baptiste Vannesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Badacadabra/hello-js-world/issues"
+  },
+  "homepage": "https://github.com/Badacadabra/hello-js-world#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

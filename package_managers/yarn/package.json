@@ -1,0 +1,22 @@
+{
+  "name": "hello-js-world",
+  "version": "1.0.0",
+  "description": "lorem ipsum",
+  "main": "index.js",
+  "repository": "git@github.com:Badacadabra/hello-js-world.git",
+  "author": "Baptiste Vannesson",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"test\"",
+    "start": "echo \"start\"",
+    "stop": "echo \"stop\"",
+    "foo": "echo \"foo\"",
+    "bar": "echo \"bar\""
+  },
+  "dependencies": {
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

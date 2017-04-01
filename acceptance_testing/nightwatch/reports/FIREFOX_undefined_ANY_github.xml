@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="github"
+    errors="0" failures="0" hostname="" id="" package="github" skipped="0"
+    tests="3" time="11.21" timestamp="Fri, 31 Mar 2017 17:24:10 GMT">
+  
+    <testcase name="My GitHub profile" classname="github" time="7.787" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="My GitHub repos" classname="github" time="0.9730" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="hello-js-world" classname="github" time="2.447" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

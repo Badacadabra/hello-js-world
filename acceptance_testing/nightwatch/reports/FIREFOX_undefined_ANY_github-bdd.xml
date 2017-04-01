@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="github-bdd"
+    errors="0" failures="0" hostname="" id="" package="github-bdd" skipped="0"
+    tests="3" time="11.58" timestamp="Fri, 31 Mar 2017 17:23:59 GMT">
+  
+    <testcase name="My GitHub profile" classname="github-bdd" time="9.228" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="My GitHub repos" classname="github-bdd" time="1.293" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="hello-js-world" classname="github-bdd" time="1.063" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

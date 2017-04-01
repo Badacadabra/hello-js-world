@@ -1,0 +1,176 @@
+19:23:59.054 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
+19:23:59.055 INFO - Launching a standalone Selenium Server
+2017-03-31 19:23:59.080:INFO::main: Logging initialized @327ms to org.seleniumhq.jetty9.util.log.StdErrLog
+19:23:59.158 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform LINUX
+19:23:59.158 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform LINUX
+19:23:59.158 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+19:23:59.158 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+19:23:59.159 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+19:23:59.159 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+19:23:59.160 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform LINUX
+2017-03-31 19:23:59.220:INFO:osjs.Server:main: jetty-9.2.20.v20161216
+2017-03-31 19:23:59.264:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@343f4d3d{/,null,AVAILABLE}
+2017-03-31 19:23:59.287:INFO:osjs.AbstractConnector:main: Started ServerConnector@5cb9f472{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-03-31 19:23:59.287:INFO:osjs.Server:main: Started @534ms
+19:23:59.288 INFO - Selenium Server is up and running
+19:23:59.616 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+19:23:59.652 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Github Bdd, browserName=firefox, javascriptEnabled=true, platform=ANY}]])
+19:23:59.672 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Github Bdd, browserName=firefox, javascriptEnabled=true, platform=ANY}]
+1490981040058	geckodriver	INFO	Listening on 127.0.0.1:15377
+1490981040252	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ERsGBxxetcEk
+1490981040253	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490981040255	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40107
+1490981041342	Marionette	INFO	Listening on port 40107
+19:24:03.486 INFO - Detected dialect: W3C
+19:24:03.541 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Github Bdd, browserName=firefox, javascriptEnabled=true, platform=ANY}]]
+19:24:03.580 INFO - Executing: [get: https://github.com/Badacadabra])
+19:24:06.420 INFO - Done: [get: https://github.com/Badacadabra]
+19:24:07.434 INFO - Executing: [find elements: By.cssSelector: nav])
+19:24:07.473 INFO - Done: [find elements: By.cssSelector: nav]
+19:24:07.485 INFO - Executing: [find element: By.cssSelector: a[href$="repositories"]])
+19:24:07.500 INFO - Done: [find element: By.cssSelector: a[href$="repositories"]]
+19:24:07.507 INFO - Executing: [click: 2 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: a[href$="repositories"]]])
+19:24:07.606 INFO - Done: [click: 2 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: a[href$="repositories"]]]
+19:24:08.621 INFO - Executing: [find elements: By.cssSelector: .js-repo-list])
+19:24:08.749 INFO - Done: [find elements: By.cssSelector: .js-repo-list]
+19:24:08.758 INFO - Executing: [find elements: By.cssSelector: a[href$="Vimpressionist"]])
+19:24:08.790 INFO - Done: [find elements: By.cssSelector: a[href$="Vimpressionist"]]
+19:24:08.797 INFO - Executing: [get text: 4 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: a[href$="Vimpressionist"]]])
+19:24:08.828 INFO - Done: [get text: 4 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: a[href$="Vimpressionist"]]]
+19:24:08.834 INFO - Executing: [find element: By.cssSelector: a[href$="hello-js-world"]])
+19:24:08.853 INFO - Done: [find element: By.cssSelector: a[href$="hello-js-world"]]
+19:24:08.859 INFO - Executing: [click: 5 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: a[href$="hello-js-world"]]])
+19:24:08.901 INFO - Done: [click: 5 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: a[href$="hello-js-world"]]]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+19:24:09.920 INFO - Executing: [find elements: By.cssSelector: a[href$="LICENSE"]])
+19:24:10.265 INFO - Done: [find elements: By.cssSelector: a[href$="LICENSE"]]
+19:24:10.278 INFO - Executing: [get current url])
+19:24:10.310 INFO - Done: [get current url]
+19:24:10.317 INFO - Executing: [get current url])
+19:24:10.335 INFO - Done: [get current url]
+19:24:10.340 INFO - Executing: [find elements: By.cssSelector: .xyz])
+19:24:10.354 INFO - Done: [find elements: By.cssSelector: .xyz]
+19:24:10.361 INFO - Executing: [find elements: By.cssSelector: article])
+19:24:10.372 INFO - Done: [find elements: By.cssSelector: article]
+19:24:10.377 INFO - Executing: [get text: 8 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: article]])
+19:24:10.405 INFO - Done: [get text: 8 [[FirefoxDriver: firefox on ANY (3da26990-7e9c-4101-b50e-5ca72dd5d3cb)] -> css selector: article]]
+19:24:10.412 INFO - Executing: [delete session: e6fe5dad-11a2-4db2-8a52-34ada6a23712])
+1490981050417	Marionette	INFO	New connections will no longer be accepted
+[Child 16291] ###!!! ABORT: Aborting on channel error.: file /build/firefox/src/mozilla-release/ipc/glue/MessageChannel.cpp, line 2143
+[Child 16291] ###!!! ABORT: Aborting on channel error.: file /build/firefox/src/mozilla-release/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+19:24:10.965 INFO - Done: [delete session: e6fe5dad-11a2-4db2-8a52-34ada6a23712]
+19:24:10.994 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Github, browserName=firefox, javascriptEnabled=true, platform=ANY}]])
+19:24:10.997 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=Github, browserName=firefox, javascriptEnabled=true, platform=ANY}]
+1490981051022	geckodriver	INFO	Listening on 127.0.0.1:18495
+1490981051142	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.yl3tOtsfuzd9
+1490981051143	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490981051146	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38845
+1490981052628	Marionette	INFO	Listening on port 38845
+19:24:15.376 INFO - Detected dialect: W3C
+19:24:15.381 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=Github, browserName=firefox, javascriptEnabled=true, platform=ANY}]]
+19:24:15.399 INFO - Executing: [get: https://github.com/Badacadabra])
+19:24:18.398 INFO - Done: [get: https://github.com/Badacadabra]
+19:24:18.407 INFO - Executing: [find elements: By.cssSelector: nav])
+19:24:18.429 INFO - Done: [find elements: By.cssSelector: nav]
+19:24:18.435 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: nav]])
+19:24:18.522 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: nav]]
+19:24:18.530 INFO - Executing: [find element: By.cssSelector: .pinned-repos-list])
+19:24:18.545 INFO - Done: [find element: By.cssSelector: .pinned-repos-list]
+19:24:18.550 INFO - Executing: [is displayed: 2 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: .pinned-repos-list]])
+19:24:18.630 INFO - Done: [is displayed: 2 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: .pinned-repos-list]]
+19:24:18.635 INFO - Executing: [find element: By.cssSelector: a[href$="repositories"]])
+19:24:18.655 INFO - Done: [find element: By.cssSelector: a[href$="repositories"]]
+19:24:18.659 INFO - Executing: [click: 3 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="repositories"]]])
+19:24:18.772 INFO - Done: [click: 3 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="repositories"]]]
+19:24:18.781 INFO - Executing: [find elements: By.cssSelector: #user-repositories-list])
+19:24:18.797 INFO - Done: [find elements: By.cssSelector: #user-repositories-list]
+19:24:19.303 INFO - Executing: [find elements: By.cssSelector: #user-repositories-list])
+19:24:19.314 INFO - Done: [find elements: By.cssSelector: #user-repositories-list]
+19:24:19.323 INFO - Executing: [is displayed: 4 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: #user-repositories-list]])
+19:24:19.396 INFO - Done: [is displayed: 4 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: #user-repositories-list]]
+19:24:19.404 INFO - Executing: [find element: By.cssSelector: .js-repo-list])
+19:24:19.446 INFO - Done: [find element: By.cssSelector: .js-repo-list]
+19:24:19.451 INFO - Executing: [is displayed: 5 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: .js-repo-list]])
+19:24:19.543 INFO - Done: [is displayed: 5 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: .js-repo-list]]
+19:24:19.550 INFO - Executing: [find element: By.cssSelector: a[href$="Vimpressionist"]])
+19:24:19.564 INFO - Done: [find element: By.cssSelector: a[href$="Vimpressionist"]]
+19:24:19.571 INFO - Executing: [get text: 6 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="Vimpressionist"]]])
+19:24:19.627 INFO - Done: [get text: 6 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="Vimpressionist"]]]
+19:24:19.633 INFO - Executing: [find element: By.cssSelector: a[href$="hello-js-world"]])
+19:24:19.678 INFO - Done: [find element: By.cssSelector: a[href$="hello-js-world"]]
+19:24:19.683 INFO - Executing: [click: 7 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="hello-js-world"]]])
+19:24:19.745 INFO - Done: [click: 7 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="hello-js-world"]]]
+19:24:19.754 INFO - Executing: [find elements: By.cssSelector: #js-repo-pjax-container])
+19:24:19.771 INFO - Done: [find elements: By.cssSelector: #js-repo-pjax-container]
+19:24:20.276 INFO - Executing: [find elements: By.cssSelector: #js-repo-pjax-container])
+19:24:20.285 INFO - Done: [find elements: By.cssSelector: #js-repo-pjax-container]
+19:24:20.790 INFO - Executing: [find elements: By.cssSelector: #js-repo-pjax-container])
+19:24:20.803 INFO - Done: [find elements: By.cssSelector: #js-repo-pjax-container]
+19:24:20.810 INFO - Executing: [is displayed: 8 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: #js-repo-pjax-container]])
+19:24:20.926 INFO - Done: [is displayed: 8 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: #js-repo-pjax-container]]
+19:24:20.932 INFO - Executing: [find element: By.cssSelector: a[href$="LICENSE"]])
+19:24:21.036 INFO - Done: [find element: By.cssSelector: a[href$="LICENSE"]]
+19:24:21.041 INFO - Executing: [is displayed: 9 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="LICENSE"]]])
+19:24:21.146 INFO - Done: [is displayed: 9 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: a[href$="LICENSE"]]]
+19:24:21.155 INFO - Executing: [get current url])
+19:24:21.496 INFO - Done: [get current url]
+19:24:21.501 INFO - Executing: [get current url])
+19:24:21.527 INFO - Done: [get current url]
+19:24:21.535 INFO - Executing: [find elements: By.cssSelector: .xyz])
+19:24:21.555 INFO - Done: [find elements: By.cssSelector: .xyz]
+19:24:21.565 INFO - Executing: [find element: By.cssSelector: article])
+19:24:21.575 INFO - Done: [find element: By.cssSelector: article]
+19:24:21.579 INFO - Executing: [get text: 10 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: article]])
+19:24:21.603 INFO - Done: [get text: 10 [[FirefoxDriver: firefox on ANY (a51287f8-35c9-4d78-a9e4-7242712b1fb1)] -> css selector: article]]
+19:24:21.607 INFO - Executing: [delete session: d2a00e4c-758b-4f21-bd4e-d41a5c8c5757])
+1490981061610	Marionette	INFO	New connections will no longer be accepted
+[Child 16446] WARNING: pipe error (3): Connexion ré-initialisée par le correspondant: file /build/firefox/src/mozilla-release/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 16446] ###!!! ABORT: Aborting on channel error.: file /build/firefox/src/mozilla-release/ipc/glue/MessageChannel.cpp, line 2143
+[Child 16446] ###!!! ABORT: Aborting on channel error.: file /build/firefox/src/mozilla-release/ipc/glue/MessageChannel.cpp, line 2143
+19:24:22.193 INFO - Done: [delete session: d2a00e4c-758b-4f21-bd4e-d41a5c8c5757]

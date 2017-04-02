@@ -5,4 +5,5 @@
 /build_tools/brunch/node_modules
 /build_tools/grunt/node_modules
 /build_tools/gulp/node_modules
+/functional_testing/zombie/node_modules
 tags

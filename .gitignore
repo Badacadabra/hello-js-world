@@ -6,5 +6,6 @@
 /build_tools/grunt/node_modules
 /build_tools/gulp/node_modules
 /functional_testing/zombie/node_modules
+/misc/learnyounode/node_modules
 /unit_testing/mocha/node_modules
 tags

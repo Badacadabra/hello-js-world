@@ -1,0 +1,27 @@
+{
+  "name": "hello-js-world",
+  "version": "1.0.0",
+  "description": "lorem ipsum",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Badacadabra/hello-js-world.git"
+  },
+  "keywords": [
+    "test",
+    "js"
+  ],
+  "author": "Baptiste Vannesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Badacadabra/hello-js-world/issues"
+  },
+  "homepage": "https://github.com/Badacadabra/hello-js-world#readme",
+  "dependencies": {
+    "cat-picture": "^5.1.2",
+    "lightning-image-poly": "0.0.10"
+  }
+}

@@ -1,0 +1,9 @@
+@container-margin: 20px;
+
+.container {
+  margin: @container-margin;
+
+  @media (max-width: 480px) {
+    margin: @container-margin / 2;
+  }
+}

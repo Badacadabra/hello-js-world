@@ -1,10 +1,11 @@
-var blessed = require('blessed');
+var blessed = require('blessed'),
+    fs = require('fs');
 
 // Screen
 
 var screen = blessed.screen({
   smartCSR: true,
-  title: "Blessed form"
+  title: 'Blessed form',
 });
 
 // Form
@@ -19,7 +20,7 @@ var form = blessed.form({
 
 // Text boxes
 
-var txt1 = blessed.text({
+var label1 = blessed.text({
   parent: screen,
   top: 3,
   left: 5,
@@ -28,6 +29,7 @@ var txt1 = blessed.text({
 
 var firstName = blessed.textbox({
   parent: form,
+  name: 'firstname',
   top: 4,
   left: 5,
   height: 3,
@@ -41,7 +43,7 @@ var firstName = blessed.textbox({
   }
 });
 
-var txt2 = blessed.text({
+var label2 = blessed.text({
   parent: screen,
   content: 'LAST NAME:',
   top: 8,
@@ -50,6 +52,7 @@ var txt2 = blessed.text({
 
 var lastName = blessed.textbox({
   parent: form,
+  name: 'lastname',
   top: 9,
   left: 5,
   height: 3,
@@ -65,7 +68,7 @@ var lastName = blessed.textbox({
 
 // Check boxes
 
-var txt3 = blessed.text({
+var label3 = blessed.text({
   parent: screen,
   content: 'What are your favorite editors?',
   top: 14,
@@ -74,6 +77,7 @@ var txt3 = blessed.text({
 
 var vim = blessed.checkbox({
   parent: form,
+  name: 'editors',
   content: 'Vim',
   top: 16,
   left: 5
@@ -81,6 +85,7 @@ var vim = blessed.checkbox({
 
 var emacs = blessed.checkbox({
   parent: form,
+  name: 'editors',
   content: 'Emacs',
   top: 16,
   left: 20
@@ -88,6 +93,7 @@ var emacs = blessed.checkbox({
 
 var atom = blessed.checkbox({
   parent: form,
+  name: 'editors',
   content: 'Atom',
   top: 16,
   left: 35
@@ -95,14 +101,15 @@ var atom = blessed.checkbox({
 
 var brackets = blessed.checkbox({
   parent: form,
+  name: 'editors',
   content: 'Brackets',
   top: 16,
-  left: 50 
+  left: 50
 });
 
 // Radio buttons
 
-var txt4 = blessed.text({
+var label4 = blessed.text({
   parent: screen,
   content: 'Do you like Blessed?',
   top: 19,
@@ -118,19 +125,21 @@ var radioset = blessed.radioset({
 
 var yes = blessed.radiobutton({
   parent: radioset,
+  name: 'like',
   content: 'Yes',
   left: 5
 });
 
 var no = blessed.radiobutton({
   parent: radioset,
+  name: 'like',
   content: 'No',
   left: 15
 });
 
 // Text area
 
-var txt5 = blessed.text({
+var label5 = blessed.text({
   parent: screen,
   content: 'Your comments...',
   top: 24,
@@ -139,6 +148,7 @@ var txt5 = blessed.text({
 
 var textarea = blessed.textarea({
   parent: form,
+  name: 'comments',
   top: 26,
   left: 5,
   height: 7,
@@ -152,6 +162,7 @@ var textarea = blessed.textarea({
 
 var submit = blessed.button({
   parent: form,
+  name: 'submit',
   content: 'Submit',
   top: 35,
   left: 5,
@@ -174,6 +185,7 @@ var submit = blessed.button({
 
 var reset = blessed.button({
   parent: form,
+  name: 'reset',
   content: 'Reset',
   top: 35,
   left: 15,
@@ -198,11 +210,11 @@ var reset = blessed.button({
 
 var msg = blessed.message({
   parent: screen,
-  top: 42,
+  top: 40,
   left: 5,
   style: {
     italic: true,
-    fg: 'red'
+    fg: 'green'
   }
 });
 
@@ -233,10 +245,22 @@ reset.on('press', function () {
 });
 
 form.on('submit', function (data) {
-  table.setData([
-    data.textbox
-  ]);
-  table.show();
+  var editors = ['Vim', 'Emacs', 'Atom', 'Brackets'].filter(function (item, index) {
+    return data.editors[index];
+  });
+
+  msg.display('Form submitted!', function () {
+    var summary = '';
+    summary += '------------------------------\n';
+    summary += data.firstname + ' ' + data.lastname + '\n';
+    summary += 'Favorite editors: ' + editors + '\n';
+    summary += 'Like Blessed: ' + data.like[0] + '\n';
+    summary += 'Comments: ' + data.comments;
+
+    fs.writeFile('form-data.txt', summary, function (err) {
+      if (err) throw err;
+    });
+  });
 });
 
 form.on('reset', function () {

@@ -2,6 +2,9 @@
 /acceptance_testing/cucumber/bin/selenium-server-standalone-3.3.1.jar
 /acceptance_testing/cucumber/node_modules
 /acceptance_testing/nightwatch/bin/selenium-server-standalone-3.3.1.jar
+/acceptance_testing/webdriver-io/geckodriver
+/acceptance_testing/webdriver-io/node_modules
+/acceptance_testing/webdriver-io/selenium-server-standalone-3.0.1.jar
 /build_tools/brunch/node_modules
 /build_tools/grunt/node_modules
 /build_tools/gulp/node_modules

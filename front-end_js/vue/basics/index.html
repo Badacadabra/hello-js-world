@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <h1 v-bind:title="message">{{ message }}</h1>
+    <ul>
+      <li v-for="color in colors">{{ color }}</li>
+    </ul>
+    <ul>
+      <li v-for="name in person">{{ name }}</li>
+    </ul>
+    <p v-if="visible">{{ person.firstname + ' ' + person.lastname }}</p>
+    <ul>
+      <list-item v-for="animal in animals" v-bind:item="animal"></list-item>
+    </ul>
+    <input type="text" v-model="message">
+    <button v-on:click="clickHandler">OK</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+  <script>
+    Vue.component('list-item', {
+      props: ['item'],
+      template: '<li>{{ item }}</li>'
+    });
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!',
+        colors: ['red', 'green', 'blue'],
+        person: {firstname: 'John', lastname: 'Doe'},
+        animals: ['dog', 'cat', 'chicken'],
+        visible: false
+      },
+      methods: {
+        clickHandler: function () {
+          alert(this.message);
+        }
+      },
+      created: function () {
+        console.log('Created!');
+      }
+    });
+  </script>
+</body>
+</html>
